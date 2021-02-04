@@ -1,7 +1,7 @@
-This project is a part of the course CE7455, Deep Learning for NLP at Nanyang Technological University.
-We have enhanced the original [KG-BERT](https://github.com/yao8839836/kg-bert) and evaluated it against the [KGLM](https://github.com/rloganiv/kglm-model).
-
 ## Introduction
+Traditional language models have been enhanced by supplementing them with external knowledge graphs for improving the factual correctness of generated text. While this certainly improves the quality of language models, it does not account for common issues with knowledge graphs such as incompleteness, errors, and inconsistencies in the relationships between entities. In this project, we have compared the performance of an existing neural language model [KGLM](https://github.com/rloganiv/kglm-model), which uses an external knowledge graph to extract factual information, with that of a knowledge graph embedded [KG-BERT](https://github.com/yao8839836/kg-bert) model, which learns to optimize existing knowledge graphs through tasks such as triple classification, link prediction and relation prediction. We have enhanced the efficiency of the existing KG-BERT model by implementing multi-task learning. We have assessed the improvised KG-BERT model on question-answering tasks and our findings prove that KG-BERT performs well and is also much more efficient when compared to KGLM in terms of learning and applying factual knowledge.
+
+## Procedure to run the code
 
 Code for [BERT and PALs](https://arxiv.org/abs/1902.02671) using which we adapted multi-task learning for link and relation prediction; 
 `modeling.py` contains the BERT model formulation and `run_bert_link_prediction_multi.py` and `run_bert_relation_prediction_multi.py` perform multi-task training on the GLUE benchmark and KG optimization.
